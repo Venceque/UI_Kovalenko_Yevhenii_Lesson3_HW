@@ -13,6 +13,14 @@
 		E0071E2121D4CAC700FD505B /* UI_Kovalenko_Yevhenii_Lesson3_HW.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E0071E1F21D4CAC700FD505B /* UI_Kovalenko_Yevhenii_Lesson3_HW.xcdatamodeld */; };
 		E0071E2321D4CACA00FD505B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0071E2221D4CACA00FD505B /* Assets.xcassets */; };
 		E0071E2621D4CACA00FD505B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0071E2421D4CACA00FD505B /* LaunchScreen.storyboard */; };
+		E0071E3121D4D3FB00FD505B /* MyComTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0071E3021D4D3FB00FD505B /* MyComTableViewController.swift */; };
+		E0071E3321D4D41100FD505B /* MyFriendsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0071E3221D4D41100FD505B /* MyFriendsTableViewController.swift */; };
+		E0071E3521D4D43000FD505B /* GlobalComTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0071E3421D4D43000FD505B /* GlobalComTableViewController.swift */; };
+		E0071E3721D4D44B00FD505B /* GlobalComTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0071E3621D4D44B00FD505B /* GlobalComTableViewCell.swift */; };
+		E0071E3921D4D45E00FD505B /* MyCOmTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0071E3821D4D45E00FD505B /* MyCOmTableViewCell.swift */; };
+		E0071E3B21D4D47500FD505B /* MyFriendsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0071E3A21D4D47500FD505B /* MyFriendsTableViewCell.swift */; };
+		E0071E3F21D5779D00FD505B /* MyCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0071E3E21D5779D00FD505B /* MyCollectionViewController.swift */; };
+		E0071E4121D5794900FD505B /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0071E4021D5794900FD505B /* MyCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +32,14 @@
 		E0071E2221D4CACA00FD505B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E0071E2521D4CACA00FD505B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E0071E2721D4CACA00FD505B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0071E3021D4D3FB00FD505B /* MyComTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyComTableViewController.swift; sourceTree = "<group>"; };
+		E0071E3221D4D41100FD505B /* MyFriendsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFriendsTableViewController.swift; sourceTree = "<group>"; };
+		E0071E3421D4D43000FD505B /* GlobalComTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalComTableViewController.swift; sourceTree = "<group>"; };
+		E0071E3621D4D44B00FD505B /* GlobalComTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalComTableViewCell.swift; sourceTree = "<group>"; };
+		E0071E3821D4D45E00FD505B /* MyCOmTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCOmTableViewCell.swift; sourceTree = "<group>"; };
+		E0071E3A21D4D47500FD505B /* MyFriendsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFriendsTableViewCell.swift; sourceTree = "<group>"; };
+		E0071E3E21D5779D00FD505B /* MyCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewController.swift; sourceTree = "<group>"; };
+		E0071E4021D5794900FD505B /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +72,63 @@
 		E0071E1721D4CAC700FD505B /* UI_Kovalenko_Yevhenii_Lesson3_HW */ = {
 			isa = PBXGroup;
 			children = (
+				E0071E3D21D5777200FD505B /* MyCollectionView */,
+				E0071E2D21D4CAFC00FD505B /* MyFriends */,
+				E0071E2F21D4CB1800FD505B /* GlobalCommunities */,
+				E0071E2E21D4CB0600FD505B /* MyCommunities */,
 				E0071E1821D4CAC700FD505B /* AppDelegate.swift */,
 				E0071E1A21D4CAC700FD505B /* ViewController.swift */,
 				E0071E1C21D4CAC700FD505B /* Main.storyboard */,
 				E0071E2221D4CACA00FD505B /* Assets.xcassets */,
+				E0071E3C21D514D300FD505B /* icons */,
 				E0071E2421D4CACA00FD505B /* LaunchScreen.storyboard */,
 				E0071E2721D4CACA00FD505B /* Info.plist */,
 				E0071E1F21D4CAC700FD505B /* UI_Kovalenko_Yevhenii_Lesson3_HW.xcdatamodeld */,
 			);
 			path = UI_Kovalenko_Yevhenii_Lesson3_HW;
+			sourceTree = "<group>";
+		};
+		E0071E2D21D4CAFC00FD505B /* MyFriends */ = {
+			isa = PBXGroup;
+			children = (
+				E0071E3221D4D41100FD505B /* MyFriendsTableViewController.swift */,
+				E0071E3A21D4D47500FD505B /* MyFriendsTableViewCell.swift */,
+			);
+			path = MyFriends;
+			sourceTree = "<group>";
+		};
+		E0071E2E21D4CB0600FD505B /* MyCommunities */ = {
+			isa = PBXGroup;
+			children = (
+				E0071E3021D4D3FB00FD505B /* MyComTableViewController.swift */,
+				E0071E3821D4D45E00FD505B /* MyCOmTableViewCell.swift */,
+			);
+			path = MyCommunities;
+			sourceTree = "<group>";
+		};
+		E0071E2F21D4CB1800FD505B /* GlobalCommunities */ = {
+			isa = PBXGroup;
+			children = (
+				E0071E3421D4D43000FD505B /* GlobalComTableViewController.swift */,
+				E0071E3621D4D44B00FD505B /* GlobalComTableViewCell.swift */,
+			);
+			path = GlobalCommunities;
+			sourceTree = "<group>";
+		};
+		E0071E3C21D514D300FD505B /* icons */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = icons;
+			sourceTree = "<group>";
+		};
+		E0071E3D21D5777200FD505B /* MyCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				E0071E3E21D5779D00FD505B /* MyCollectionViewController.swift */,
+				E0071E4021D5794900FD505B /* MyCollectionViewCell.swift */,
+			);
+			path = MyCollectionView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +202,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0071E4121D5794900FD505B /* MyCollectionViewCell.swift in Sources */,
+				E0071E3321D4D41100FD505B /* MyFriendsTableViewController.swift in Sources */,
 				E0071E2121D4CAC700FD505B /* UI_Kovalenko_Yevhenii_Lesson3_HW.xcdatamodeld in Sources */,
+				E0071E3521D4D43000FD505B /* GlobalComTableViewController.swift in Sources */,
+				E0071E3921D4D45E00FD505B /* MyCOmTableViewCell.swift in Sources */,
+				E0071E3121D4D3FB00FD505B /* MyComTableViewController.swift in Sources */,
+				E0071E3721D4D44B00FD505B /* GlobalComTableViewCell.swift in Sources */,
+				E0071E3B21D4D47500FD505B /* MyFriendsTableViewCell.swift in Sources */,
 				E0071E1B21D4CAC700FD505B /* ViewController.swift in Sources */,
+				E0071E3F21D5779D00FD505B /* MyCollectionViewController.swift in Sources */,
 				E0071E1921D4CAC700FD505B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
