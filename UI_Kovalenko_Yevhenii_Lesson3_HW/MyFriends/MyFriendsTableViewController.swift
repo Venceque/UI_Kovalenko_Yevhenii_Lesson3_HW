@@ -94,6 +94,8 @@ class MyFriendsTableViewController: UITableViewController {
             let selectedFriendImage = friends[indexPath.row].avatar
             nextScene.friendImage = selectedFriendImage
             
+            
+            
         }
     }
     
