@@ -40,9 +40,14 @@ class MyFriendsTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MyFriendsId", for: indexPath) as! MyFriendsTableViewCell
-
+      let layer = cell.friendsAvatar.layer
       cell.friendsNameLabel.text = friends[indexPath.row].name
       cell.friendsAvatar.image = friends[indexPath.row].avatar
+      layer.shadowColor = UIColor.black.cgColor
+      layer.shadowOpacity = 0.3
+      layer.shadowRadius = 8
+      layer.masksToBounds = true
+    
 
         return cell
     }

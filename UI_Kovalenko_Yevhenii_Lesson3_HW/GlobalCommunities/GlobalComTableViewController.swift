@@ -43,6 +43,7 @@ class GlobalComTableViewController: UITableViewController {
 
         cell.gComNames.text = globalCom[indexPath.row].name
         cell.gComAvatars.image = globalCom[indexPath.row].avatar
+        
 
         return cell
     }
