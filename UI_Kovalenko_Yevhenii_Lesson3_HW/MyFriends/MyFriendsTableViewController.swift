@@ -34,21 +34,43 @@ class MyFriendsTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return friends.count
+        return friends.count 
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MyFriendsId", for: indexPath) as! MyFriendsTableViewCell
-      let layer = cell.friendsAvatar.layer
-      cell.friendsNameLabel.text = friends[indexPath.row].name
-      cell.friendsAvatar.image = friends[indexPath.row].avatar
-      layer.shadowColor = UIColor.black.cgColor
-      layer.shadowOpacity = 0.3
-      layer.shadowRadius = 8
-      layer.masksToBounds = true
+     //let layer = cell.friendsAvatar.layer
     
-
+        if let backView = cell.backView2 {
+       
+          backView.clipsToBounds = false
+          backView.layer.shadowColor = UIColor.black.cgColor
+          backView.layer.shadowRadius = 22
+          backView.layer.shadowOffset = CGSize(width: 3, height: 3)
+          backView.layer.shadowOpacity = 5
+          backView.layer.shadowColor = UIColor.black.cgColor
+            
+          backView.layer.cornerRadius = 64
+          backView.backgroundColor = UIColor.clear
+         // backView.layer.masksToBounds = true
+        
+        }
+        
+        
+        cell.friendsNameLabel.text = friends[indexPath.row].name
+        cell.friendsAvatar.image = friends[indexPath.row].avatar
+      
+//      layer.borderWidth = 2
+//      layer.borderColor = UIColor.black.cgColor
+//      layer.cornerRadius = 64
+//      layer.shadowColor = UIColor.black.cgColor
+//      layer.shadowOpacity = 0.9
+//      layer.shadowRadius = 2
+//      layer.shadowOffset = CGSize(width: 3, height: 3)
+//      layer.masksToBounds = true
+    
+    
         return cell
     }
     

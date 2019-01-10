@@ -22,6 +22,7 @@
 		E0071E3F21D5779D00FD505B /* MyCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0071E3E21D5779D00FD505B /* MyCollectionViewController.swift */; };
 		E0071E4121D5794900FD505B /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0071E4021D5794900FD505B /* MyCollectionViewCell.swift */; };
 		E064FC8E21E652CC00EE8442 /* BackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E064FC8D21E652CC00EE8442 /* BackView.swift */; };
+		E064FC9021E686CD00EE8442 /* ShadowTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E064FC8F21E686CD00EE8442 /* ShadowTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		E0071E3E21D5779D00FD505B /* MyCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewController.swift; sourceTree = "<group>"; };
 		E0071E4021D5794900FD505B /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
 		E064FC8D21E652CC00EE8442 /* BackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackView.swift; sourceTree = "<group>"; };
+		E064FC8F21E686CD00EE8442 /* ShadowTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 				E0071E3221D4D41100FD505B /* MyFriendsTableViewController.swift */,
 				E0071E3A21D4D47500FD505B /* MyFriendsTableViewCell.swift */,
 				E064FC8D21E652CC00EE8442 /* BackView.swift */,
+				E064FC8F21E686CD00EE8442 /* ShadowTableViewCell.swift */,
 			);
 			path = MyFriends;
 			sourceTree = "<group>";
@@ -217,6 +220,7 @@
 				E064FC8E21E652CC00EE8442 /* BackView.swift in Sources */,
 				E0071E3F21D5779D00FD505B /* MyCollectionViewController.swift in Sources */,
 				E0071E1921D4CAC700FD505B /* AppDelegate.swift in Sources */,
+				E064FC9021E686CD00EE8442 /* ShadowTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

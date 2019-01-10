@@ -147,38 +147,45 @@
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MyFriendsId" rowHeight="152" id="uhB-RM-d5H" customClass="MyFriendsTableViewCell" customModule="UI_Kovalenko_Yevhenii_Lesson3_HW" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="152"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="uhB-RM-d5H" id="oEo-py-TYS">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="uhB-RM-d5H" id="oEo-py-TYS">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="151.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3YW-iT-weX">
-                                            <rect key="frame" x="242" y="5" width="128" height="128"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="128" id="Cip-fo-43Z"/>
-                                                <constraint firstAttribute="height" constant="128" id="ym7-7f-r45"/>
-                                            </constraints>
-                                        </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UGn-Pt-t1A">
-                                            <rect key="frame" x="21" y="11" width="216" height="130"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="130" id="whT-Il-jrJ"/>
-                                            </constraints>
+                                            <rect key="frame" x="21" y="11" width="53" height="130"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EhC-es-Kjl" customClass="BackView" customModule="UI_Kovalenko_Yevhenii_Lesson3_HW" customModuleProvider="target">
+                                            <rect key="frame" x="226" y="11" width="128" height="128"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3YW-iT-weX">
+                                                    <rect key="frame" x="0.0" y="3" width="128" height="128"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="128" id="2b8-GL-6ym"/>
+                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="128" id="XXO-uV-dfe"/>
+                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="128" id="ouz-TU-GJ7"/>
+                                                <constraint firstAttribute="height" constant="128" id="uok-4M-X9J"/>
+                                            </constraints>
+                                        </view>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="trailing" secondItem="3YW-iT-weX" secondAttribute="trailing" constant="5" id="A1J-x9-qDn"/>
-                                        <constraint firstItem="UGn-Pt-t1A" firstAttribute="top" secondItem="oEo-py-TYS" secondAttribute="topMargin" id="KoW-vV-q1i"/>
-                                        <constraint firstItem="3YW-iT-weX" firstAttribute="top" secondItem="oEo-py-TYS" secondAttribute="top" constant="5" id="RfV-2c-snd"/>
-                                        <constraint firstItem="UGn-Pt-t1A" firstAttribute="bottom" secondItem="oEo-py-TYS" secondAttribute="bottomMargin" id="TWu-Iw-t4r"/>
-                                        <constraint firstAttribute="bottom" secondItem="3YW-iT-weX" secondAttribute="bottom" constant="5" id="V3Q-7r-A3J"/>
-                                        <constraint firstItem="UGn-Pt-t1A" firstAttribute="leading" secondItem="oEo-py-TYS" secondAttribute="leadingMargin" constant="5" id="Zre-MQ-r6N"/>
-                                        <constraint firstItem="3YW-iT-weX" firstAttribute="leading" secondItem="UGn-Pt-t1A" secondAttribute="trailing" constant="5" id="ygV-3c-mka"/>
+                                        <constraint firstItem="EhC-es-Kjl" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="UGn-Pt-t1A" secondAttribute="trailing" constant="8" symbolic="YES" id="6XJ-8b-a2G"/>
+                                        <constraint firstItem="EhC-es-Kjl" firstAttribute="leading" secondItem="oEo-py-TYS" secondAttribute="leading" constant="226" id="9SE-3l-Lq1"/>
+                                        <constraint firstItem="UGn-Pt-t1A" firstAttribute="top" secondItem="EhC-es-Kjl" secondAttribute="top" id="Pff-Rh-YGM"/>
+                                        <constraint firstAttribute="bottom" secondItem="EhC-es-Kjl" secondAttribute="bottom" constant="12.5" id="WJf-R7-FUD"/>
+                                        <constraint firstItem="UGn-Pt-t1A" firstAttribute="bottom" secondItem="oEo-py-TYS" secondAttribute="bottomMargin" id="cmX-KA-kpz"/>
+                                        <constraint firstItem="EhC-es-Kjl" firstAttribute="top" secondItem="oEo-py-TYS" secondAttribute="top" constant="11" id="ixh-dg-Qxu"/>
+                                        <constraint firstItem="UGn-Pt-t1A" firstAttribute="leading" secondItem="oEo-py-TYS" secondAttribute="leadingMargin" constant="5" id="vdW-Zw-joQ"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="backView2" destination="EhC-es-Kjl" id="ZyY-ER-4Dc"/>
                                     <outlet property="friendsAvatar" destination="3YW-iT-weX" id="8Ds-qP-KvP"/>
                                     <outlet property="friendsNameLabel" destination="UGn-Pt-t1A" id="3BU-G3-o9J"/>
                                     <segue destination="Xit-oE-cev" kind="show" identifier="ShowImage" id="HWj-Jx-Puz"/>
